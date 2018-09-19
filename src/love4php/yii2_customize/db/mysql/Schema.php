@@ -20,8 +20,7 @@ class Schema extends \yii\db\mysql\Schema
     {
         $sql = 'SHOW FULL COLUMNS FROM ' . $this->quoteTableName($table->fullName);
         try {
-            var_dump($this->db);die;
-            $columns = $this->db->createCommand($sql)->queryAll();
+            $columns = $this->db->createCommand($sql)->cache(3600)->queryAll();
         } catch (\Exception $e) {
             $previous = $e->getPrevious();
             if ($previous instanceof \PDOException && strpos($previous->getMessage(), 'SQLSTATE[42S02') !== false) {
