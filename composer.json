@@ -1,0 +1,23 @@
+{
+    "name": "love4php/yii2-customize",
+    "type": "library",
+    "description": "Customize yii2",
+    "keywords": ["yii2","customize yii2"],
+    "homepage": "https://github.com/love4php/yii2-customize",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Meysam Eradeshahi",
+            "email": "love4php@gmail.com",
+            "role": "Developer"
+        }
+    ],
+	"require": {
+		"yiisoft/yii2": "2.*",
+	},
+	"autoload": {
+        "psr-4": {
+            "Love4php": "src/"
+        }
+    }
+}
