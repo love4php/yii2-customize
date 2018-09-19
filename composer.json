@@ -17,7 +17,7 @@
 	},
 	"autoload": {
         "psr-4": {
-            "Love4php\": "src/"
+            "Love4php\\": "src/"
         }
     }
 }
